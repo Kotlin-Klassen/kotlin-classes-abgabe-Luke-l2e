@@ -11,7 +11,9 @@ enum class Genre(val description: String) {
     CHILDREN("Books for children");
 
     /**
-     * Returns the description of this Genre
+     * Prints out the description of this Genre
      */
-    fun printDescription(): String = description
+    fun printDescription() {
+        println(description)
+    }
 }

@@ -28,7 +28,7 @@ sealed class BookStatus {
     /**
      * Returns the description of this `BookStatus`
      */
-    fun printBookStatus(): String {
+    fun getDescription(): String {
         return when (this) {
             Available -> ("Das Buch ist verfügbar.\n")
             is CheckedOut -> ("Das Buch ist bis voraussichtlich ${this.dueDate} ausgeliehen.\n")

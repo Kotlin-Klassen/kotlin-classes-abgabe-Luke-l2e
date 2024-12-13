@@ -20,15 +20,18 @@ class Main {
 
         val member1 = library.LibraryMember("Alice", 1)
 
-        println(library.libraryAddress?.printAddress())
+        library.libraryAddress?.printAddress()
 
         member1.checkoutBook(book1, "13.01.2025")
         member1.reserveBook(book2)
         library.printStatusForAllBooks()
 
-        for (book in library.searchBooksByAuthor("Stephen Hawking")) {
+        val searchBooksByAuthor = library.searchBooksByAuthor("Stephen Hawking")
+        println("\nSearchBooksByAuthor: ${searchBooksByAuthor.size}")
+        for (book in searchBooksByAuthor) {
             println(book)
         }
+        println("\nSearchBookByTitle:")
         println(library.searchBookByTitle("1984"))
     }
 }

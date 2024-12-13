@@ -1,14 +1,12 @@
 package com.example.kotlin_classes.abschluss_abgabe
 
-import java.util.ArrayList
-
 /**
  * Represents a library containing books and having an address.
  * @param books The list of books in this library
  * @param libraryAddress The address of this library
  */
 class Library(
-    val books: List<Book> = emptyList<Book>(),
+    var books: List<Book> = emptyList<Book>(),
     var libraryAddress: LibraryAddress? = null
 ) {
 
@@ -19,7 +17,12 @@ class Library(
      * @param zipCode The zipcode of the library
      */
     class LibraryAddress(val street: String, val city: String, val zipCode: String) {
-        fun printAddress() = "Street: $street, City: $city, Zipcode: $zipCode"
+        /**
+         * Prints out the address
+         */
+        fun printAddress() {
+            println("Street: $street, City: $city, Zipcode: $zipCode")
+        }
     }
 
     /**
@@ -51,7 +54,7 @@ class Library(
      * @param book The book to be added
      */
     fun addBook(book: Book) {
-        books.plus(book)
+        books = books.plus(book)
     }
 
     /**
@@ -74,10 +77,10 @@ class Library(
      * @return A list containing all found books or an `emptyList()`
      */
     fun searchBooksByAuthor(author: String): List<Book> {
-        val foundBooks: List<Book> = ArrayList()
+        var foundBooks: List<Book> = emptyList()
         for (book: Book in books) {
             if (book.author == author) {
-                foundBooks.plus(book)
+                foundBooks = foundBooks.plus(book)
             }
         }
         return foundBooks
@@ -88,7 +91,7 @@ class Library(
      */
     fun printStatusForAllBooks() {
         for (book: Book in books) {
-            println("\"${book.title}\" von ${book.author}: ${book.status.printBookStatus()}")
+            println("\"${book.title}\" von ${book.author}: ${book.status.getDescription()}")
         }
     }
 }
