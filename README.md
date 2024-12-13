@@ -4,11 +4,11 @@ Data-, Enum-, Nested-, Sealed-Klassen
 
 Hier finden sie alles was Sie zum lösen der Aufgaben brauchen.
 
-Bei Fragen gerne uns eine Mail Schreiben:
-mhottmann@stud.hs-heilbronn.de
-phottmann@stud.hs-heilbronn.de
+Bei Fragen gerne uns eine Mail Schreiben:\
+mhottmann@stud.hs-heilbronn.de\
+phottmann@stud.hs-heilbronn.de\
 jwilleke@stud.hs-heilbronn.de
 ## Info für Bewertung
-Name: Lukas Rost
-Matrikelnummer: 218496
-Eidesstattliche Erklärung aus Sicherheitsgründen, da dies hier ein Public Repository ist, in Ilias.
+**Name**: Lukas Rost\
+**Matrikelnummer**: 218496\
+**Weitere Info**: Eidesstattliche Erklärung aus Sicherheitsgründen, da dies hier ein Public Repository ist, in Ilias.
