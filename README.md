@@ -8,3 +8,7 @@ Bei Fragen gerne uns eine Mail Schreiben:
 mhottmann@stud.hs-heilbronn.de
 phottmann@stud.hs-heilbronn.de
 jwilleke@stud.hs-heilbronn.de
+## Info für Bewertung
+Name: Lukas Rost
+Matrikelnummer: 218496
+Eidesstattliche Erklärung aus Sicherheitsgründen, da dies hier ein Public Repository ist, in Ilias.
